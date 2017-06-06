@@ -14,7 +14,7 @@ import rx.schedulers.Schedulers;
 public class MainInteractorImpl implements MainInteractor {
 
     @Inject
-    NetworkService repoListService;
+    NetworkService networkService;
 
     @Inject
     public MainInteractorImpl() {}
@@ -26,7 +26,7 @@ public class MainInteractorImpl implements MainInteractor {
             return;
         }
 
-        repoListService.getRepoList(userName)
+        networkService.getRepoList(userName)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<List<Repo>>() {

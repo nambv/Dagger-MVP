@@ -16,7 +16,7 @@ public class CommonModule {
 
     @Provides
     @Singleton
-    NetworkService provideRepoListService() {
+    NetworkService provideNetworkService() {
 
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
