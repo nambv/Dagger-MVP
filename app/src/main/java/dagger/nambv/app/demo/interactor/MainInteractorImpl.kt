@@ -1,13 +1,12 @@
 package dagger.nambv.app.demo.interactor
 
-import javax.inject.Inject
-
 import dagger.nambv.app.demo.model.Repo
 import dagger.nambv.app.demo.presenter.OnPromotionsCompletedListener
 import dagger.nambv.app.demo.service.NetworkService
 import rx.Observer
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
+import javax.inject.Inject
 
 class MainInteractorImpl @Inject constructor() : MainInteractor {
 

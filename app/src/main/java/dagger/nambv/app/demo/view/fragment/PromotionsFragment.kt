@@ -6,15 +6,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
-import javax.inject.Inject
-
 import dagger.nambv.app.demo.BaseApplication
 import dagger.nambv.app.demo.R
 import dagger.nambv.app.demo.model.Repo
 import dagger.nambv.app.demo.presenter.PromotionsPresenter
 import dagger.nambv.app.demo.util.CommonConstants
 import dagger.nambv.app.demo.util.CommonUtils
+import javax.inject.Inject
 
 class PromotionsFragment : Fragment(), PromotionsView {
 

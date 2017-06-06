@@ -1,10 +1,9 @@
 package dagger.nambv.app.demo.presenter
 
-import javax.inject.Inject
-
 import dagger.nambv.app.demo.interactor.MainInteractor
 import dagger.nambv.app.demo.model.Repo
 import dagger.nambv.app.demo.view.fragment.PromotionsView
+import javax.inject.Inject
 
 class PromotionsPresenterImpl @Inject constructor(val view: PromotionsView, val mainInteractor: MainInteractor) : PromotionsPresenter, OnPromotionsCompletedListener {
 

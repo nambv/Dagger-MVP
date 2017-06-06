@@ -1,7 +1,5 @@
 package dagger.nambv.app.demo.di.module
 
-import javax.inject.Singleton
-
 import dagger.Module
 import dagger.Provides
 import dagger.nambv.app.demo.service.NetworkService
@@ -10,6 +8,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Singleton
 
 @Module
 class CommonModule {
